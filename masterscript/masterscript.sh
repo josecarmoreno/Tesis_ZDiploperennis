@@ -56,8 +56,13 @@ grep -Fwf keep_Nayarit.txt keep_diploperennis.txt > keep_NayaritP.txt
 ###VCF
 ./plink --bfile /home/genconser/Documentos/JoseCarlos/DiversidadZdiploperennis/R/data/datosZdiploperennis/datosJC/diploperennis_dataJa --recode vcf-iid --out /home/genconser/Documentos/JoseCarlos/DiversidadZdiploperennis/R/data/datosZdiploperennis/datosJC/diploperennis_dataJa
 
-####Hice un PCA que gráfica el primer y segundo eigenvector para cada población (Nayarit y Jalisco)
+####Análisis exploratorios de estructuración genética
+###PCA de todo Zea diploperennis
 Rscript PCAnewdata.R
+
+####Hice un PCA que gráfica el primer y segundo eigenvector para cada grupo (Nayarit y Jalisco)
+Rscript PCAJa.R
+Rscript PCANa.R
 ##Ahora la graficación para los eigenvectores 1:4
 Rscript PCA1_4newdata.R
 
@@ -176,3 +181,15 @@ Rscript plotTajimaLocalidades.R
 Rscript pruebasDTajima.R
 
 
+
+####CurrentNe
+./currentNe -k 0 -o CurrentCorralitos /home/genconser/Documentos/JoseCarlos/DiversidadZdiploperennis/R/data/datosZdiploperennis/datosJC/Localidades/Corralitos_data.ped 10
+./currentNe -k 0 -o CurrentCuzalapa /home/genconser/Documentos/JoseCarlos/DiversidadZdiploperennis/R/data/datosZdiploperennis/datosJC/Localidades/SanMiguelC_data.ped 10
+./currentNe -k 0 -o CurrentPlayas /home/genconser/Documentos/JoseCarlos/DiversidadZdiploperennis/R/data/datosZdiploperennis/datosJC/Localidades/Playas_data.ped 10
+./currentNe -k 0 -o CurrentManantlan /home/genconser/Documentos/JoseCarlos/DiversidadZdiploperennis/R/data/datosZdiploperennis/datosJC/Localidades/Manantlan_data.ped 10
+./currentNe -k 0 -o CurrentEmbocada /home/genconser/Documentos/JoseCarlos/DiversidadZdiploperennis/R/data/datosZdiploperennis/datosJC/Localidades/Embocada_data.ped 10
+./currentNe -k 0 -o CurrentTateposco /home/genconser/Documentos/JoseCarlos/DiversidadZdiploperennis/R/data/datosZdiploperennis/datosJC/Localidades/Tateposco_data.ped 10
+./currentNe -k 0 -o CurrentElRincon /home/genconser/Documentos/JoseCarlos/DiversidadZdiploperennis/R/data/datosZdiploperennis/datosJC/Localidades/ElRincon_data.ped 10
+./currentNe -k 0 -o CurrentAserradero /home/genconser/Documentos/JoseCarlos/DiversidadZdiploperennis/R/data/datosZdiploperennis/datosJC/Localidades/Aserradero_data.ped 10
+./currentNe -k 0 -o CurrentPino /home/genconser/Documentos/JoseCarlos/DiversidadZdiploperennis/R/data/datosZdiploperennis/datosJC/Localidades/Pino_data.ped 10
+./currentNe -k 0 -o CurrentZapotes /home/genconser/Documentos/JoseCarlos/DiversidadZdiploperennis/R/data/datosZdiploperennis/datosJC/Localidades/Zapotes_data.ped 10
