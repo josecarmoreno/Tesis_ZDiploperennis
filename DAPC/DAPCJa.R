@@ -17,7 +17,10 @@ dapc_dataJa$pop <- pop_vectorJa
 # 25 pc, 2 clusters
 grp <- find.clusters(dapc_dataJa, max.n.clust = 6)
 
-# Realizar un análisis DAPC con información de población 25 pc y 3 discriminantes
+# Calcular y mostrar el puntaje de a-scores para la selección de discriminantes
+a_scores <- optim.a.score(dapc_resultJa)
+
+# Realizar un análisis DAPC con información de población 8 pc y 2 discriminantes
 dapc_resultJa <- dapc(dapc_dataJa)
 
 # Definir los colores para cada grupo/clúster en formato hexadecimal
